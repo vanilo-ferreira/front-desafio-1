@@ -1,0 +1,170 @@
+body{
+    flex-direction: column; 
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.textBarra{
+    display: flex; 
+    flex-direction: row;
+    text-align: flex-end;
+    justify-content: flex-end;
+}
+
+.conteudo, .rodape, .middle{
+    background-color: #E5E5E5;
+}
+
+.barraDeNavegacao{
+    display: flex; 
+    background-color: white;
+    width: 10px;
+    margin-left: 50px; 
+    margin-right: 50px; 
+    margin-top: 10px; 
+    margin-bottom: 10px;  
+}
+
+h2{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+h3{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.middle{
+    display: flex;
+    flex-grow: 1; 
+}
+
+.conteudo{
+    flex-grow: 1;
+}
+
+.dataPost{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.imgPost{
+    width: 730px;
+    height: 350px;
+    left: 140px;
+    top: 221px;
+}
+
+.card{
+    display: flex;
+    max-width: 730px;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #FFFFFF;
+    margin-left: 45px;
+    box-shadow: 0 3px 10px 0px white;
+    margin-top: 30px; 
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+.alignTitulo{
+    margin-bottom: 0px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.alignDataTitulo{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #929292;
+}
+
+.alignTitulo, .alignDataTitulo{
+    margin-left: 30px;  
+}
+
+.paragrafo{
+    margin-left: 30px;
+    margin-right: 30px; 
+    margin-top: 15px; 
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.alignButton{
+    display: flex; 
+    justify-content: flex-end;
+}
+
+button{
+    margin-right: 30px; 
+    max-width: 150px;
+    min-height: 40px;
+    border-radius: 25px;
+    background-color: #FFFFFF;
+    cursor: pointer; 
+    border-color: deeppink;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #545454;
+    margin-bottom: 20px;
+}
+
+.mouseButton:hover{
+    background-color: deeppink;
+    color: white; 
+}
+
+
+
+
+
+
+
+
+.rodape{
+    background-color: black;
+    height: 50px;
+    display: flex;
+    justify-content: center; 
+}
+
+.textRodape{
+    color: #FFFFFF; 
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;   
+    line-height: 19px;
+    letter-spacing: 0em;
+}
+
+
+

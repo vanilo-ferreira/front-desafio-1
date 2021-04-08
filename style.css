@@ -1,25 +1,29 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
 body{
     flex-direction: column; 
     height: 100vh;
-    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
 }
 
 .textBarra{
     display: flex; 
-    flex-direction: row;
-    text-align: flex-end;
-    justify-content: flex-end;
+    margin-left: 790px;
+    
 }
 
 .conteudo, .rodape, .middle{
-    background-color: #E5E5E5;
+    background-color: #F5F5F5;
 }
 
 .barraDeNavegacao{
     display: flex; 
     background-color: white;
+    justify-content: space-between;
     width: 10px;
-    margin-left: 50px; 
+    margin-left: 120px; 
     margin-right: 50px; 
     margin-top: 10px; 
     margin-bottom: 10px;  
@@ -50,7 +54,7 @@ h3{
 }
 
 .conteudo{
-    flex-grow: 1;
+    flex-grow: 1;   
 }
 
 .dataPost{
@@ -75,16 +79,15 @@ h3{
     flex-direction: column;
     flex-grow: 1;
     background-color: #FFFFFF;
-    margin-left: 45px;
-    box-shadow: 0 3px 10px 0px white;
-    margin-top: 30px; 
-    margin-left: 30px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.12);
+    margin-top: 30px;
+    margin-left: 120px;
     margin-bottom: 50px;
+    border-radius: 10px;
 }
 
 .alignTitulo{
     margin-bottom: 0px;
-    font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -116,6 +119,7 @@ h3{
     letter-spacing: 0em;
     text-align: left;
 }
+
 .alignButton{
     display: flex; 
     justify-content: flex-end;
@@ -123,12 +127,12 @@ h3{
 
 button{
     margin-right: 30px; 
-    max-width: 150px;
-    min-height: 40px;
+    width: 150px;
+    height: 40px;
     border-radius: 25px;
     background-color: #FFFFFF;
     cursor: pointer; 
-    border-color: deeppink;
+    border-color: #FE0078;
     text-align: center;
     font-style: normal;
     font-weight: normal;
@@ -139,15 +143,99 @@ button{
 }
 
 .mouseButton:hover{
-    background-color: deeppink;
+    background-color: #FE0078;
     color: white; 
 }
 
+.menuLateral{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #FFFFFF;
+    margin-left: 45px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.12);
+    margin-top: 30px;
+    margin-right: 200px;
+    border-radius: 4px;
+}
 
+.inputPesquisar{
+    width: 340px;
+    height: 40px;
+    margin: 20px; 
+    border-radius: 10px;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+}
+.inputPesquisar:hover{
+    border: 1px solid #FE0078; 
+}
+.placeholderText{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #545454;
+    margin-left: 20px;
+}
 
+.subtituloMenuLateral{
+    margin: 20px 20px;
+    padding: 10px; 
+    border-left: 2px solid #FE0078;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+}
 
+.textMenuLateral{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px; 
+    padding: 15px;
+    border-bottom: 2px dashed #EEEEEE;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #545454;
+}
+.textMenuLateral:hover{
+    color: #FE0078;
+    border-bottom: 2px dashed #FE0078; 
+}
 
+.anuncio, .anuncio2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: #EEEEEE;
+    width: 340px; 
+    height: 240px;
+    margin: 20px;
+}
 
+.anuncio3{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: #EEEEEE;
+    width: 340px; 
+    height: 240px;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+.textAnuncio{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 49px;
+    color: #545454;
+}
 
 
 .rodape{
@@ -166,5 +254,54 @@ button{
     letter-spacing: 0em;
 }
 
+/*PÁGINA CONTINUAR LENDO*/
 
+.cardComentarios{
+    display: flex;
+    max-width: 730px;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-top: 30px;
+    margin-left: 120px;
+    margin-bottom: 50px;
+}
 
+.tamanhoInput{
+    width: 340px;
+    height: 40px;
+}
+
+#textoComentario{
+    margin-top: 20px;
+    margin-left: 0px; 
+    margin-bottom: 20px;
+}
+
+.alignInput{
+    display: flex;
+}
+
+#name{
+    margin-left: 0px;
+    margin-right: 40px;
+}
+
+#comentario{
+    width: 730px;
+    height: 120px;
+}
+
+#botaoComentar{
+    margin-top: 30px;
+    margin-left: 750px;
+    margin-right: 0px;
+}
+
+#boxComentario{
+    margin-top: 30px;
+}
+
+input:hover{
+    border: 1px solid #FE0078;
+    cursor: pointer;   
+}
